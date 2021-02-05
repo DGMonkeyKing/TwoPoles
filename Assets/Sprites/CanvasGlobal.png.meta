@@ -1,0 +1,514 @@
+fileFormatVersion: 2
+guid: 675830fc06ca85e4ba88305dda7bcfc5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8296886669362924900
+    second: CanvasGlobal_0
+  - first:
+      213: -8330981380312829568
+    second: CanvasGlobal_1
+  - first:
+      213: 746161630437065851
+    second: CanvasGlobal_2
+  - first:
+      213: -6433688433847212297
+    second: CanvasGlobal_3
+  - first:
+      213: 7163626442282324457
+    second: CanvasGlobal_4
+  - first:
+      213: 2425440933342260843
+    second: CanvasGlobal_5
+  - first:
+      213: -3683657664509168811
+    second: CanvasGlobal_6
+  - first:
+      213: 2103958530855610236
+    second: CanvasGlobal_7
+  - first:
+      213: -2701578269276324939
+    second: CanvasGlobal_8
+  - first:
+      213: -4936501940292862448
+    second: CanvasGlobal_9
+  - first:
+      213: -4214174064245689431
+    second: CanvasGlobal_10
+  - first:
+      213: 6017128061831924009
+    second: CanvasGlobal_11
+  - first:
+      213: -1397941725692401753
+    second: CanvasGlobal_12
+  - first:
+      213: 9068122858602553412
+    second: CanvasGlobal_13
+  - first:
+      213: 1716415756031656033
+    second: CanvasGlobal_14
+  - first:
+      213: -150230784997216681
+    second: CanvasGlobal_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CanvasGlobal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08571429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92f2f278898bdc80800000000000000
+      internalID: -8296886669362924900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 103
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08571429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0817f04f298626c80800000000000000
+      internalID: -8330981380312829568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 102
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.114285715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b744a3fac06ea5a00800000000000000
+      internalID: 746161630437065851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 102
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.114285715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f66ff0e472f6b6a0800000000000000
+      internalID: -6433688433847212297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 55
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08571429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e155d37b405a6360800000000000000
+      internalID: 7163626442282324457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 55
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08571429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6eae87ada5e8a120800000000000000
+      internalID: 2425440933342260843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 55
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08571429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55339c8fed401ecc0800000000000000
+      internalID: -3683657664509168811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 55
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08571429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c772dc5f223c23d10800000000000000
+      internalID: 2103958530855610236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 55
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08571429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbbedea0e0128ad0800000000000000
+      internalID: -2701578269276324939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_9
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 55
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08571429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01e31d7d3a50e7bb0800000000000000
+      internalID: -4936501940292862448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_10
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 55
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08571429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3b8f6240f3485c0800000000000000
+      internalID: -4214174064245689431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_11
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 55
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08571429}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929c6859712218350800000000000000
+      internalID: 6017128061831924009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34285715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a768673863899ce0800000000000000
+      internalID: -1397941725692401753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34285715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440ea96e1b178dd70800000000000000
+      internalID: 9068122858602553412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_14
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 8
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34285715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1608621490fe1d710800000000000000
+      internalID: 1716415756031656033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CanvasGlobal_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 8
+        width: 20
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.34285715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ea9e1a5e54aedf0800000000000000
+      internalID: -150230784997216681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
