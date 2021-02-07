@@ -135,9 +135,8 @@ GameObject:
   - component: {fileID: 213560016}
   - component: {fileID: 213560015}
   - component: {fileID: 213560019}
-  - component: {fileID: 213560018}
   - component: {fileID: 213560017}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap_base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1111,7 +1110,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 213560013}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7458ea5b1981ecf4ebc60b1b7756215f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1127,62 +1126,26 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 10.662777, y: 5.673337}
-      - {x: -10.68514, y: 5.690166}
+    - - {x: 10.685826, y: 5.687166}
+      - {x: -10.68514, y: 5.6880064}
       - {x: -10.691663, y: -5.687953}
       - {x: 12.998336, y: -5.6926765}
       - {x: 13.002245, y: -5.313949}
       - {x: 5.6873517, y: -5.312959}
-      - {x: 5.6904135, y: -1.4400805}
-      - {x: 5.6581607, y: -1.3755463}
-      - {x: 5.626133, y: -1.3428081}
-      - {x: 5.5630097, y: -1.3133473}
-      - {x: 3.4373813, y: -1.3120806}
-      - {x: 3.3751113, y: -1.342725}
-      - {x: 3.343662, y: -1.3743573}
-      - {x: 3.313011, y: -1.4382125}
+      - {x: 5.6847644, y: -1.3214588}
+      - {x: 3.3131106, y: -1.3177295}
       - {x: 3.3127637, y: -5.312185}
       - {x: -4.3126874, y: -5.3125663}
-      - {x: -4.314371, y: -3.4394662}
-      - {x: -4.3383703, y: -3.3813362}
-      - {x: -4.3738647, y: -3.3427656}
-      - {x: -4.438297, y: -3.3117056}
-      - {x: -6.5586715, y: -3.3111982}
-      - {x: -6.6236362, y: -3.3435748}
-      - {x: -6.6577516, y: -3.3771057}
-      - {x: -6.6886535, y: -3.4351747}
-      - {x: -6.6934614, y: -5.316303}
-      - {x: -10.315303, y: -5.3101454}
-      - {x: -10.278765, y: 5.304563}
-      - {x: 10.306228, y: 5.290255}
-      - {x: 10.311139, y: -3.561539}
-      - {x: 10.353083, y: -3.6432943}
-      - {x: 10.437373, y: -3.6877205}
+      - {x: -4.31137, y: -3.3097289}
+      - {x: -6.688763, y: -3.3126307}
+      - {x: -6.687194, y: -5.312542}
+      - {x: -10.313018, y: -5.311288}
+      - {x: -10.311157, y: 5.311042}
+      - {x: 10.314037, y: 5.3136854}
+      - {x: 10.313435, y: -3.6859927}
       - {x: 13.003087, y: -3.688327}
       - {x: 13.000852, y: -3.3136976}
       - {x: 10.687682, y: -3.3124752}
---- !u!66 &213560018
-CompositeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 213560013}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_GeometryType: 1
-  m_GenerationType: 0
-  m_EdgeRadius: 0
-  m_ColliderPaths: []
-  m_CompositePaths:
-    m_Paths: []
-  m_VertexDistance: 0.0005
-  m_OffsetDistance: 0
 --- !u!50 &213560019
 Rigidbody2D:
   serializedVersion: 4
@@ -1456,7 +1419,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -1471,13 +1434,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 528403085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3be8b69373dca34c9ad4e0f85c4c704, type: 3}
+  m_Script: {fileID: 11500000, guid: aa06668978b9f58468d228ef0adf74e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topeTecho: {fileID: 1016661817}
+  m_GroundCheck: {fileID: 1679955064}
+  k_GroundedRadius: 0.05
   topeSuelo: {fileID: 1679955063}
   speed: 5
-  movementSmoothing: 0.05
+  jumpForce: 5
+  movementSmoothing: 0.073
+  m_WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &546434493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1576,7 +1544,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1679955063}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 528403088}
