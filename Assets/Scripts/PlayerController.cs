@@ -5,6 +5,12 @@ using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
+    public enum PlayerNum
+    {
+        P1,
+        P2
+    }
+
     [SerializeField] 
     private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
     [Range(0, .4f)][SerializeField] 
@@ -37,13 +43,8 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 m_Velocity = Vector3.zero;
 
-    /*[Space]
-    [Header("Events")]
-    [Space]
-    // Evento de cuando caes al suelo.
-    public UnityEvent OnLandEvent;
-    public UnityEvent OnAirEvent;
-    */
+    [SerializeField]
+    private PlayerNum playerNum;
 
     // Start is called before the first frame update
     void Start()
@@ -59,8 +60,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         //Movement
-        horizontalInput = Input.GetAxisRaw ("Horizontal");
-        verticalInput = Input.GetAxisRaw ("Vertical"); //Useless for now
+        horizontalInput = Input.GetAxisRaw ("Horizontal - " + playerNum.ToString());
+        verticalInput = Input.GetAxisRaw ("Vertical - " + playerNum.ToString()); //Useless for now
 
         //If horizontalInput is negative, dale la vuelta.
         if (horizontalInput > 0) 
@@ -80,12 +81,14 @@ public class PlayerController : MonoBehaviour
         m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, movementSmoothing);
 
         //Jumping
-        jumpInput = Input.GetButton ("Jump");
+        jumpInput = Input.GetButton ("Jump - " + playerNum.ToString());
 
-        if(isGrounded && jumpInput)
+        if(!stillPressing && isGrounded && jumpInput)
         {
+            Debug.Log("ENTRO: " + isGrounded);
             stillPressing = true;
             isGrounded = false;
+            Debug.Log("ENTRO: " + isGrounded);
             m_Rigidbody2D.AddForce(new Vector3(0,1,0) * jumpForce, ForceMode2D.Impulse);
         } else if(stillPressing && !jumpInput) //Soltamos el botón o se acaba el tiempo
         {
@@ -94,6 +97,7 @@ public class PlayerController : MonoBehaviour
             if(m_Rigidbody2D.velocity.y > 0) m_Rigidbody2D.velocity = new Vector2( m_Rigidbody2D.velocity.x, 0f);
         }
 
+        Debug.Log("isGrounded: " + isGrounded);
         //Update values on Animator
         m_Animator.SetFloat("speed", horizontalInput);
         m_Animator.SetBool("jumping", !isGrounded);
@@ -101,14 +105,13 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        
         bool wasGrounded = isGrounded;
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
         Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
         for (int i = 0; i < colliders.Length; i++)
         {
-            if (colliders[i].gameObject != gameObject)
+            if (colliders[i].gameObject != gameObject && m_Rigidbody2D.velocity.y <= 0)
             {
                 isGrounded = true;
             } 
