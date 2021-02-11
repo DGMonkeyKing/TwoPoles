@@ -9,20 +9,36 @@ public class PlayerController : MonoBehaviour
     {
         P1,
         P2
+    } 
+
+    [Header("Player")]   
+    [SerializeField]
+    private PlayerNum playerNum;
+
+    [Header("Magnetic Properties")]
+    [SerializeField]
+    private MagneticObject.Polarity polarity;
+    public MagneticObject.Polarity Polarity
+    {
+        get {return polarity;}
     }
 
-    [SerializeField] 
-    private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
-    [Range(0, .4f)][SerializeField] 
-    private float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded
+    [Header("Checkers")]
     [SerializeField]
     public GameObject topeSuelo;
+    [SerializeField] 
+    private Transform m_GroundCheck; // A position marking where to check if the player is grounded.
+    [Range(0, .4f)][SerializeField] 
+    private float k_GroundedRadius = .2f; // Radius of the overlap circle to determine if grounded    [Header("Movement Parameters")]
+    [SerializeField] 
+    private LayerMask m_WhatIsGround;  
+    private bool isGrounded; 
 
+    [Header("Movement Parameters")]
     [SerializeField]
     public float speed = 5f;
     [SerializeField]
     public float jumpForce = 5f;
-
     [Range(0, .3f)] [SerializeField] 
     private float movementSmoothing = .05f;  // How much to smooth out the movement
 
@@ -33,18 +49,12 @@ public class PlayerController : MonoBehaviour
     private float horizontalInput;
     private float verticalInput;
     private bool jumpInput;
+    private bool actionInput;
     private bool stillPressing = true;
-
-    [SerializeField] 
-    private LayerMask m_WhatIsGround;  
-    private bool isGrounded; 
 
     private float baseGravityScale;
 
     private Vector3 m_Velocity = Vector3.zero;
-
-    [SerializeField]
-    private PlayerNum playerNum;
 
     // Start is called before the first frame update
     void Start()
@@ -85,10 +95,8 @@ public class PlayerController : MonoBehaviour
 
         if(!stillPressing && isGrounded && jumpInput)
         {
-            Debug.Log("ENTRO: " + isGrounded);
             stillPressing = true;
             isGrounded = false;
-            Debug.Log("ENTRO: " + isGrounded);
             m_Rigidbody2D.AddForce(new Vector3(0,1,0) * jumpForce, ForceMode2D.Impulse);
         } else if(stillPressing && !jumpInput) //Soltamos el botón o se acaba el tiempo
         {
@@ -97,11 +105,15 @@ public class PlayerController : MonoBehaviour
             if(m_Rigidbody2D.velocity.y > 0) m_Rigidbody2D.velocity = new Vector2( m_Rigidbody2D.velocity.x, 0f);
         }
 
-        Debug.Log("isGrounded: " + isGrounded);
+        // Conducting
+        actionInput = Input.GetButton ("Action - " + playerNum.ToString());
+        Debug.Log("actionInput: " + actionInput);
+
         //Update values on Animator
         m_Animator.SetFloat("speed", horizontalInput);
         m_Animator.SetBool("jumping", !isGrounded);
     }
+
 
     void FixedUpdate()
     {
@@ -115,6 +127,15 @@ public class PlayerController : MonoBehaviour
             {
                 isGrounded = true;
             } 
+            else
+            {
+                isGrounded = false;
+            }
         }
+    }
+
+    public bool IsConduting()
+    {
+        return actionInput;
     }
 }
