@@ -24,7 +24,7 @@ public class MagneticLinear : MagneticObject
         collider = gameObject.AddComponent(typeof(BoxCollider2D)) as BoxCollider2D;
         
         collider.offset = new Vector2(magneticBase.x, magneticBase.y - magneticHeightScope/2);
-        collider.size = new Vector2(magneticWidthScope, magneticHeightScope);
+        collider.size = new Vector2( Mathf.Abs(magneticWidthScope), Mathf.Abs(magneticHeightScope));
         collider.isTrigger = true;
     }
 

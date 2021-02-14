@@ -155,13 +155,19 @@ MonoBehaviour:
   polarity: 0
   topeSuelo: {fileID: 7971064816330302888}
   m_GroundCheck: {fileID: 7971064816330302887}
-  k_GroundedRadius: 0.1
+  k_GroundedRadius: 0.045
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 256
   speed: 4
   jumpForce: 8
   movementSmoothing: 0.073
+  OnWaste:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCharge:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!50 &7971064815905389389
 Rigidbody2D:
   serializedVersion: 4
@@ -239,7 +245,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.76}
+  m_Size: {x: 0.15, y: 0.76}
   m_EdgeRadius: 0.02
 --- !u!1 &7971064816330302888
 GameObject:

@@ -41,6 +41,12 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 5f;
     [Range(0, .3f)] [SerializeField] 
     private float movementSmoothing = .05f;  // How much to smooth out the movement
+    
+    [Header("Events")]
+    [SerializeField]
+    private UnityEvent OnWaste;
+    [SerializeField]
+    private UnityEvent OnCharge;
 
     private Animator m_Animator;
     private Rigidbody2D m_Rigidbody2D;
@@ -51,6 +57,11 @@ public class PlayerController : MonoBehaviour
     private bool jumpInput;
     private bool actionInput;
     private bool stillPressing = true;
+    private bool noEnergy = false;
+    public bool NoEnergy
+    {
+        get {return noEnergy;} set {noEnergy = value;}
+    }
 
     private float baseGravityScale;
 
@@ -107,16 +118,17 @@ public class PlayerController : MonoBehaviour
 
         // Conducting
         actionInput = Input.GetButton ("Action - " + playerNum.ToString());
-        Debug.Log("actionInput: " + actionInput);
+        if(Input.GetButtonDown("Action - " + playerNum.ToString()) || (actionInput && !noEnergy))
+        {
+            //Waste
+            OnWaste.Invoke();
+        }
+        if(noEnergy || Input.GetButtonUp("Action - " + playerNum.ToString()))
+        {
+            //Charge
+            OnCharge.Invoke();
+        }
 
-        //Update values on Animator
-        m_Animator.SetFloat("speed", horizontalInput);
-        m_Animator.SetBool("jumping", !isGrounded);
-    }
-
-
-    void FixedUpdate()
-    {
         bool wasGrounded = isGrounded;
         // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
@@ -127,15 +139,22 @@ public class PlayerController : MonoBehaviour
             {
                 isGrounded = true;
             } 
-            else
-            {
-                isGrounded = false;
-            }
         }
+        if(colliders.Length == 0) isGrounded = false;
+
+        //Update values on Animator
+        m_Animator.SetFloat("speed", horizontalInput);
+        m_Animator.SetBool("jumping", !isGrounded);
+    }
+
+
+    void FixedUpdate()
+    {
+
     }
 
     public bool IsConduting()
     {
-        return actionInput;
+        return actionInput && !noEnergy;
     }
 }
