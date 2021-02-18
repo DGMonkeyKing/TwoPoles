@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MagneticCircular : MagneticObject
+public class MagneticCircular : MagneticField
 {
     //Si la fuerza es negativa, gira en sentido antihorario.
 

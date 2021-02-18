@@ -2,102 +2,67 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-/**Componente que define un objeto magnetico.*/
-public abstract class MagneticObject : MonoBehaviour
+[RequireComponent(typeof(Rigidbody2D))]
+public class MagneticObject : MonoBehaviour
 {
-    public enum Polarity { plus, minus };
-
     [SerializeField]
-    protected Polarity polarity;
-
-    protected Vector2 magneticBase;
-    [SerializeField]
-    protected float force;
-
-    [SerializeField]
-    protected LayerMask effectLayers;
-
-    protected void OnDrawGizmos()
+    protected MagneticField.Polarity polarity;
+    public MagneticField.Polarity Polarity
     {
-        // Draw a semitransparent blue cube at the transforms position
-        if(polarity == Polarity.plus) Gizmos.color = new Color(1, 0, 0, 0.2f);
-        else if(polarity == Polarity.minus) Gizmos.color = new Color(0, 0, 1, 0.2f);
+        get {return polarity;}
+    }
+    
+    protected Rigidbody2D m_Rigidbody2D;
+    protected bool conducting = true;
+    private GameObject[] pc;
 
-        magneticBase = GetComponent<Transform>().position;
+    protected void Awake()
+    {
+        m_Rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //Check if something enter in the magnetic field
-        
-    }
-
-
-///////////////////////////////////////////////////////////////
-/////// MAGNETIC CHECK FIELD //////////////////////////////////
-///////////////////////////////////////////////////////////////
-/*
-    private Dictionary<int, float> go2Gravity = new Dictionary<int, float>();
-    private void OnTriggerEnter2D(Collider2D other) 
-    {
-        int mask = 1 << other.gameObject.layer;
-        int tmp = effectLayers & mask;
-        bool result = tmp != 0;
-
-        if (result)
+        pc = GameObject.FindGameObjectsWithTag("Player");
+        for(int i = 0; i < pc.Length; i++)
         {
-            Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
-            if (rb) 
+            pc[i].GetComponent<PlayerController>().OnWaste.AddListener(StartMagnetism);
+            pc[i].GetComponent<PlayerController>().OnCharge.AddListener(StopMagnetism);
+        }
+    }
+
+    private void StartMagnetism()
+    {
+        conducting = true;
+        for(int i = 0; i < pc.Length; i++)
+        {
+            PlayerController p = pc[i].GetComponent<PlayerController>();
+            if(p.IsConducting())
             {
-                if(!go2Gravity.ContainsKey(other.GetInstanceID()))
-                    go2Gravity.Add(other.GetInstanceID(), rb.gravityScale);
+                int inverse = 
+                    ((Polarity != MagneticField.Polarity.metal) && 
+                    (p.Polarity == Polarity)) ? -1 : 1;
+                m_Rigidbody2D.AddForce((p.transform.position - this.transform.position) * (inverse * p.ConductingForce));
             }
-            else Debug.LogError("NO HAY RIGIDBODY2D EN EL OBJETO ATRAIDO.");
         }
     }
-*/
-    private void OnTriggerStay2D(Collider2D other) 
-    {
-        int mask = 1 << other.gameObject.layer;
-        int tmp = effectLayers & mask;
-        bool result = tmp != 0;
 
-        if (result)
-        {
-            PlayerController pc = other.GetComponent<PlayerController>();
-            Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
-            bool invert = false;
-            if(pc)
-            {
-                Debug.Log("pc:OKEY");
-                if(!pc.IsConduting()) return;
-                else invert = (pc.Polarity == polarity) ? true : false;  
-            } 
-            if (rb) ApplyForce(rb, invert);
-            else Debug.LogError("NO HAY RIGIDBODY2D EN EL OBJETO ATRAIDO.");
-        }
-    }
-/*
-    private void OnTriggerExit2D(Collider2D other) 
+    private void StopMagnetism()
     {
-        int mask = 1 << other.gameObject.layer;
-        int tmp = effectLayers & mask;
-        bool result = tmp != 0;
-
-        if (result)
-        {
-            Rigidbody2D rb = other.GetComponent<Rigidbody2D>();
-            if (rb) rb.gravityScale = go2Gravity[other.GetInstanceID()];
-            else Debug.LogError("NO HAY RIGIDBODY2D EN EL OBJETO ATRAIDO.");
-        }
     }
-*/
-    protected abstract void ApplyForce(Rigidbody2D target, bool invert);
+
+    // Desde aqui nos  aseguramos que es el player
+    void FixedUpdate() 
+    {
+        //if(conducting && pc.IsConducting())
+        //{
+
+        //}
+    }
+
+    public bool IsConducting()
+    {
+        return conducting;
+    }
 }

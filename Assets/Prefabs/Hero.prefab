@@ -48,7 +48,7 @@ GameObject:
   - component: {fileID: 9118165928552651761}
   m_Layer: 9
   m_Name: Hero
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa06668978b9f58468d228ef0adf74e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  polarity: 0
   playerNum: 0
   polarity: 0
   topeSuelo: {fileID: 7971064816330302888}
@@ -162,12 +163,18 @@ MonoBehaviour:
   speed: 4
   jumpForce: 8
   movementSmoothing: 0.073
+  conductingForce: 30
+  m_StretchVariation: 0.3
+  m_ShortenVariation: 0.3
+  m_ExpandVariation: 0.3
+  m_ShrinkVariation: 0.3
   OnWaste:
     m_PersistentCalls:
       m_Calls: []
   OnCharge:
     m_PersistentCalls:
       m_Calls: []
+  InputEnabled: 1
 --- !u!50 &7971064815905389389
 Rigidbody2D:
   serializedVersion: 4
@@ -187,7 +194,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!58 &8522690069150531938
 CircleCollider2D:
