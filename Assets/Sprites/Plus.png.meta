@@ -1,0 +1,826 @@
+fileFormatVersion: 2
+guid: b7dc8a89a6c5aca44a9374764c3d1583
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -902346185991720001
+    second: Plus_0
+  - first:
+      213: -2769482881850510668
+    second: Plus_1
+  - first:
+      213: 4354068443145559909
+    second: Plus_2
+  - first:
+      213: 7021780362610299383
+    second: Plus_3
+  - first:
+      213: -4531777339305646958
+    second: Plus_4
+  - first:
+      213: 1507091517718285097
+    second: Plus_5
+  - first:
+      213: 6776368029623274579
+    second: Plus_6
+  - first:
+      213: -269636803482827800
+    second: Plus_7
+  - first:
+      213: -1628634763385332040
+    second: Plus_8
+  - first:
+      213: 5036731921475802511
+    second: Plus_9
+  - first:
+      213: 8433758087056344781
+    second: Plus_10
+  - first:
+      213: 6025244494814708810
+    second: Plus_11
+  - first:
+      213: -4053991730325665189
+    second: Plus_12
+  - first:
+      213: -8877723294562536174
+    second: Plus_13
+  - first:
+      213: 8635060169892220078
+    second: Plus_14
+  - first:
+      213: -8425030668353091395
+    second: Plus_15
+  - first:
+      213: 4830734143324209319
+    second: Plus_16
+  - first:
+      213: 2083107873459894389
+    second: Plus_17
+  - first:
+      213: 8714859801467087548
+    second: Plus_18
+  - first:
+      213: 3209304190353181052
+    second: Plus_19
+  - first:
+      213: -4982061798782675837
+    second: Plus_20
+  - first:
+      213: 4051013847267920589
+    second: Plus_21
+  - first:
+      213: -5163156480511563549
+    second: Plus_22
+  - first:
+      213: 8610169445900010130
+    second: Plus_23
+  - first:
+      213: 5072196046541273068
+    second: Plus_24
+  - first:
+      213: -221281430819167344
+    second: Plus_25
+  - first:
+      213: 2072102595052748862
+    second: Plus_26
+  - first:
+      213: -6088377285192422872
+    second: Plus_27
+  - first:
+      213: -4117328636243902086
+    second: Plus_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Plus_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 250
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb3f887bce83a73f0800000000000000
+      internalID: -902346185991720001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 250
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b276c70ef1d099d0800000000000000
+      internalID: -2769482881850510668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 250
+        width: 19
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fdd612e22cc6c30800000000000000
+      internalID: 4354068443145559909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 250
+        width: 19
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1533c6900627160800000000000000
+      internalID: 7021780362610299383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 202
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294a5813584eb11c0800000000000000
+      internalID: -4531777339305646958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_5
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 202
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b4a9d10c34ae410800000000000000
+      internalID: 1507091517718285097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_6
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 202
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c4209f1de7a0e50800000000000000
+      internalID: 6776368029623274579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_7
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 202
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3c80e71ce024cf0800000000000000
+      internalID: -269636803482827800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_8
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 202
+        width: 19
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be9093cf4de569e0800000000000000
+      internalID: -1628634763385332040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_9
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 202
+        width: 20
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f859f603ff016e540800000000000000
+      internalID: 5036731921475802511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_10
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 202
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc64294db4aba0570800000000000000
+      internalID: 8433758087056344781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 202
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a440f46e1f7fd9350800000000000000
+      internalID: 6025244494814708810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 154
+        width: 19
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a419f00045db7c0800000000000000
+      internalID: -4053991730325665189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_13
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 106
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5263158, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215b36523bdfbc480800000000000000
+      internalID: -8877723294562536174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_14
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 106
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.57894737, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaccc885975e5d770800000000000000
+      internalID: 8635060169892220078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_15
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 106
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5263158, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8ca0fae37441b80800000000000000
+      internalID: -8425030668353091395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 106
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.57894737, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0c039eb173a0340800000000000000
+      internalID: 4830734143324209319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_17
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 58
+        width: 19
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 578756af29fa8ec10800000000000000
+      internalID: 2083107873459894389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 58
+        width: 19
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbae6cde0d661f870800000000000000
+      internalID: 8714859801467087548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_19
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 58
+        width: 19
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c798c22582db98c20800000000000000
+      internalID: 3209304190353181052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_20
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 58
+        width: 19
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384d38aa0392cdab0800000000000000
+      internalID: -4982061798782675837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 58
+        width: 19
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcac79281a7183830800000000000000
+      internalID: 4051013847267920589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_22
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 58
+        width: 19
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e82a5b5988c858b0800000000000000
+      internalID: -5163156480511563549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_23
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 58
+        width: 19
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 292cace0e777d7770800000000000000
+      internalID: 8610169445900010130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_24
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 58
+        width: 19
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7bb314e6f046640800000000000000
+      internalID: 5072196046541273068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_25
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 10
+        width: 19
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5263158, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09322a806b9ddecf0800000000000000
+      internalID: -221281430819167344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_26
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 10
+        width: 19
+        height: 29
+      alignment: 9
+      pivot: {x: 0.57894737, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30c84ce45691cc10800000000000000
+      internalID: 2072102595052748862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_27
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 10
+        width: 19
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5263158, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a6c81ed1db18ba0800000000000000
+      internalID: -6088377285192422872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plus_28
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 10
+        width: 19
+        height: 29
+      alignment: 9
+      pivot: {x: 0.57894737, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71832d7b6f4cd6c0800000000000000
+      internalID: -4117328636243902086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -47,6 +47,10 @@ public class CameraManager : MonoBehaviour
 
     void Awake()
     {
+#if !DEVELOPMENT_BUILD
+        currentLevel = 0;
+#endif
+
         levels = GameObject.FindGameObjectsWithTag("Level");
         levels = levels.OrderBy(obj => obj.name, new AlphanumComparatorFast()).ToArray();
 

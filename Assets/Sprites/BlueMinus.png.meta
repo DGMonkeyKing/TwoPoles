@@ -1,0 +1,850 @@
+fileFormatVersion: 2
+guid: f4a7c0874bfb41a4e9904b9a109800cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4859716393548441213
+    second: BlueMinus_0
+  - first:
+      213: -8003580201205011108
+    second: BlueMinus_1
+  - first:
+      213: 3403926696915957474
+    second: BlueMinus_2
+  - first:
+      213: -9170831420769393755
+    second: BlueMinus_3
+  - first:
+      213: 2078213105964989875
+    second: BlueMinus_4
+  - first:
+      213: 3679223401355303970
+    second: BlueMinus_5
+  - first:
+      213: -7630111491293838722
+    second: BlueMinus_6
+  - first:
+      213: -1609206524813178271
+    second: BlueMinus_7
+  - first:
+      213: -3923885949766238498
+    second: BlueMinus_8
+  - first:
+      213: 905184226988001279
+    second: BlueMinus_9
+  - first:
+      213: -3613341210160425442
+    second: BlueMinus_10
+  - first:
+      213: 4136902278091284262
+    second: BlueMinus_11
+  - first:
+      213: 5641168786177646
+    second: BlueMinus_12
+  - first:
+      213: -2413718190071904538
+    second: BlueMinus_13
+  - first:
+      213: 876315491920119786
+    second: BlueMinus_14
+  - first:
+      213: -6488328482148853531
+    second: BlueMinus_15
+  - first:
+      213: -9203563620280230969
+    second: BlueMinus_16
+  - first:
+      213: 7461782750301396654
+    second: BlueMinus_17
+  - first:
+      213: -2785364060868236494
+    second: BlueMinus_18
+  - first:
+      213: -7814973905431226934
+    second: BlueMinus_19
+  - first:
+      213: 8411774199327573957
+    second: BlueMinus_20
+  - first:
+      213: -8531117876421093614
+    second: BlueMinus_21
+  - first:
+      213: -7181675802762619913
+    second: BlueMinus_22
+  - first:
+      213: 9109201274817660246
+    second: BlueMinus_23
+  - first:
+      213: 1797653944150407720
+    second: BlueMinus_24
+  - first:
+      213: -3112775559558925502
+    second: BlueMinus_25
+  - first:
+      213: -625182100086837333
+    second: BlueMinus_26
+  - first:
+      213: -7126224588815811713
+    second: BlueMinus_27
+  - first:
+      213: -502413902020714532
+    second: BlueMinus_28
+  - first:
+      213: -2023377257070007047
+    second: BlueMinus_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlueMinus_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 250
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389176d10b1de8cb0800000000000000
+      internalID: -4859716393548441213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 250
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d63d736329de090800000000000000
+      internalID: -8003580201205011108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 250
+        width: 19
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6f42bcb4d2d3f20800000000000000
+      internalID: 3403926696915957474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 250
+        width: 19
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3ac067969aab080800000000000000
+      internalID: -9170831420769393755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 202
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdba9c1fcb47dc10800000000000000
+      internalID: 2078213105964989875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_5
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 202
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c561fa03a3f0330800000000000000
+      internalID: 3679223401355303970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_6
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 202
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e720ec456066c1690800000000000000
+      internalID: -7630111491293838722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_7
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 202
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a054e0133faa9e0800000000000000
+      internalID: -1609206524813178271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 202
+        width: 19
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede7901b48e8b89c0800000000000000
+      internalID: -3923885949766238498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_9
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 202
+        width: 20
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff708e1324cdf8c00800000000000000
+      internalID: 905184226988001279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_10
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 202
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e169b1c4055daddc0800000000000000
+      internalID: -3613341210160425442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_11
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 202
+        width: 19
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f922424ba396930800000000000000
+      internalID: 4136902278091284262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 154
+        width: 19
+        height: 36
+      alignment: 9
+      pivot: {x: 0.47368422, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e3e95fc9a041000800000000000000
+      internalID: 5641168786177646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_13
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 106
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5263158, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e68dd43810c08ed0800000000000000
+      internalID: -2413718190071904538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_14
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 106
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.57894737, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae702170c4c492c00800000000000000
+      internalID: 876315491920119786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_15
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 106
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.5263158, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8d7734f93d4f5a0800000000000000
+      internalID: -6488328482148853531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_16
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 106
+        width: 19
+        height: 27
+      alignment: 9
+      pivot: {x: 0.57894737, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb1d7166af564080800000000000000
+      internalID: -9203563620280230969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_17
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 58
+        width: 19
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae1ade80e39d8760800000000000000
+      internalID: 7461782750301396654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_18
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 58
+        width: 19
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b2fc5e4266859d0800000000000000
+      internalID: -2785364060868236494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_19
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 58
+        width: 19
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac513d573a2ab8390800000000000000
+      internalID: -7814973905431226934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_20
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 58
+        width: 19
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c747b91110acb470800000000000000
+      internalID: 8411774199327573957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_21
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 58
+        width: 19
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2179feebd716b9980800000000000000
+      internalID: -8531117876421093614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_22
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 58
+        width: 19
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f3d05458ef855c90800000000000000
+      internalID: -7181675802762619913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_23
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 58
+        width: 19
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655ca0dfb426a6e70800000000000000
+      internalID: 9109201274817660246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_24
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 58
+        width: 19
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a3a22ecbc82f810800000000000000
+      internalID: 1797653944150407720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_25
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 10
+        width: 19
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5263158, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243f8faee133dc4d0800000000000000
+      internalID: -3112775559558925502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_26
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 10
+        width: 19
+        height: 29
+      alignment: 9
+      pivot: {x: 0.57894737, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf246c3138e257f0800000000000000
+      internalID: -625182100086837333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_27
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 10
+        width: 19
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5263158, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bbaf92e709a1d90800000000000000
+      internalID: -7126224588815811713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_28
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 10
+        width: 19
+        height: 29
+      alignment: 9
+      pivot: {x: 0.57894737, y: -0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf56dfc7311709f0800000000000000
+      internalID: -502413902020714532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueMinus_29
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 154
+        width: 19
+        height: 36
+      alignment: 9
+      pivot: {x: 0.42105263, y: 0.33333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fcecb1ea158be3e0800000000000000
+      internalID: -2023377257070007047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

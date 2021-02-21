@@ -1,0 +1,562 @@
+fileFormatVersion: 2
+guid: e4c5e37e9e0aef241be39dc2312fbf90
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 857839323651735254
+    second: Elect_0
+  - first:
+      213: 496965517829932153
+    second: Elect_1
+  - first:
+      213: -1532663178964240869
+    second: Elect_2
+  - first:
+      213: 4428245774997039998
+    second: Elect_3
+  - first:
+      213: 2930822534106154463
+    second: Elect_4
+  - first:
+      213: -389674256574571386
+    second: Elect_5
+  - first:
+      213: 6317420934322159643
+    second: Elect_6
+  - first:
+      213: -8261338790900936691
+    second: Elect_7
+  - first:
+      213: -1075389930264969538
+    second: Elect_8
+  - first:
+      213: -5730003492349866034
+    second: Elect_9
+  - first:
+      213: 2185806118941348115
+    second: Elect_10
+  - first:
+      213: -5348686882554625195
+    second: Elect_11
+  - first:
+      213: -4390455467242008348
+    second: Elect_12
+  - first:
+      213: 1204122301110415989
+    second: Elect_13
+  - first:
+      213: -3164270727956811568
+    second: Elect_14
+  - first:
+      213: 204379752556219283
+    second: Elect_15
+  - first:
+      213: -406947447766378904
+    second: Elect_16
+  - first:
+      213: -637798309621107215
+    second: Elect_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Elect_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de7f90e158a7eb00800000000000000
+      internalID: 857839323651735254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9740fd3618395e600800000000000000
+      internalID: 496965517829932153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16f38985f2eabae0800000000000000
+      internalID: -1532663178964240869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ba2dc021a447d30800000000000000
+      internalID: 4428245774997039998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd58b1d019f5ca820800000000000000
+      internalID: 2930822534106154463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c12c60459979af0800000000000000
+      internalID: -389674256574571386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1083ee5edcfba750800000000000000
+      internalID: 6317420934322159643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00d13fd324d95d80800000000000000
+      internalID: -8261338790900936691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe368b5e827311f0800000000000000
+      internalID: -1075389930264969538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf0dbcbe20fa70b0800000000000000
+      internalID: -5730003492349866034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311df53951b855e10800000000000000
+      internalID: 2185806118941348115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5534a8e6e95a5c5b0800000000000000
+      internalID: -5348686882554625195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e05ed0a308f113c0800000000000000
+      internalID: -4390455467242008348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572ffc76ad6e5b010800000000000000
+      internalID: 1204122301110415989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0b7f6b9804614d0800000000000000
+      internalID: -3164270727956811568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b45665d4a16d200800000000000000
+      internalID: 204379752556219283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_16
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86612adc37b3a5af0800000000000000
+      internalID: -406947447766378904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elect_17
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 10
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f570bc01d51627f0800000000000000
+      internalID: -637798309621107215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

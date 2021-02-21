@@ -56,6 +56,8 @@ public class PlayerController : MonoBehaviour
     {
         get {return conductingForce;}
     }
+    [SerializeField]
+    private GameObject electricity;
     
     [Header("Animation Variations")]
     [Range(.2f, .5f)] [SerializeField] 
@@ -106,7 +108,7 @@ public class PlayerController : MonoBehaviour
         GameObject[] pc = GameObject.FindGameObjectsWithTag("Player");
         m_OtherPlayer = pc.Where(val => val != this.gameObject).ToArray()[0].GetComponent<PlayerController>();
 
-
+        electricity.SetActive(false);
         baseGravityScale = m_Rigidbody2D.gravityScale;
     }
 
@@ -124,6 +126,9 @@ public class PlayerController : MonoBehaviour
     void OnBecameInvisible()
     {
         gameObject.SetActive(false);
+        jumpInput = conducting = noEnergy = false;
+        //Charge
+        OnCharge.Invoke();
     }
 
     // Update is called once per frame
@@ -175,12 +180,15 @@ public class PlayerController : MonoBehaviour
         if(conducting && !noEnergy)
         {
             Expand();
+            electricity.SetActive(true);
+            stillPressing = false;
             //Waste
             OnWaste.Invoke();
         }
         if(noEnergy || Input.GetButtonUp("Action - " + playerNum.ToString()))
         {
             Shrink();
+            electricity.SetActive(false);
             //Charge
             OnCharge.Invoke();
         }
@@ -219,6 +227,7 @@ public class PlayerController : MonoBehaviour
         //Update values on Animator
         m_Animator.SetFloat("speed", horizontalInput);
         m_Animator.SetBool("jumping", !isGrounded);
+        m_Animator.SetBool("action", IsConducting());
     }
 
     public bool IsConducting()
@@ -278,5 +287,7 @@ public class PlayerController : MonoBehaviour
             // Fraction of journey completed equals current distance divided by total distance.
             fractionOfJourney = distCovered / journeyLength;
         }
+
+        transform.localScale = Vector3.one;
     }
 }
