@@ -160,6 +160,14 @@ MonoBehaviour:
   m_Back: {fileID: 5698078855444210583}
   m_Rays: {fileID: 5698078857194154204}
   m_Viewport: {fileID: 5698078856851606373}
+  deltaWaste: 0.005
+  deltaCharge: 0.005
+  OnNoEnergy:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFullEnergy:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5698078856726954497
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,10 +346,10 @@ SpriteMask:
   m_BackSortingLayerID: 0
   m_FrontSortingLayer: 0
   m_BackSortingLayer: 0
-  m_FrontSortingOrder: 0
-  m_BackSortingOrder: 0
-  m_IsCustomRangeActive: 0
-  m_SpriteSortPoint: 0
+  m_FrontSortingOrder: 10
+  m_BackSortingOrder: -10
+  m_IsCustomRangeActive: 1
+  m_SpriteSortPoint: 1
 --- !u!1 &5698078857194154203
 GameObject:
   m_ObjectHideFlags: 0

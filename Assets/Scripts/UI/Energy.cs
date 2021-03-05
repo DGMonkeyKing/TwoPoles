@@ -15,7 +15,9 @@ public class Energy : MonoBehaviour
     private Animator m_Animator;
     private bool charging = true;
 
+    [SerializeField]
     private float deltaWaste = 0.005f;
+    [SerializeField]
     private float deltaCharge = 0.005f;
 
     [SerializeField]
@@ -69,11 +71,6 @@ public class Energy : MonoBehaviour
 
     public void AutomaticallyCharge()
     {
-        StartCoroutine("Recharge");
-    }
-
-    IEnumerator Recharge()
-    {
-        return null;//Aumentar Xpos de Viewport hasta el final
+        m_Viewport.localPosition = new Vector2(0f,m_Viewport.localPosition.y);
     }
 }

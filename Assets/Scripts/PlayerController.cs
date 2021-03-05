@@ -74,9 +74,8 @@ public class PlayerController : MonoBehaviour
     public UnityEvent OnWaste;
     [SerializeField]
     public UnityEvent OnCharge;
-
-    [HideInInspector]
-    public bool InputEnabled = true;
+    [SerializeField]
+    public UnityEvent OnChargeAll;
 
     private Rigidbody2D m_Rigidbody2D;
     private Animator m_Animator;
@@ -112,6 +111,8 @@ public class PlayerController : MonoBehaviour
         baseGravityScale = m_Rigidbody2D.gravityScale;
     }
 
+
+/// HANDLE WHETHER OR NOT THE PLAYER IS OUT OF SCREEN.
     void OnBecameVisible()
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
@@ -119,8 +120,7 @@ public class PlayerController : MonoBehaviour
         if (colliders.Length == 0) {
             m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x,0);
              m_Rigidbody2D.AddForce(new Vector3(0,1,0) * jumpForce*1.3f, ForceMode2D.Impulse);
-        }
-           
+        }   
     }
 
     void OnBecameInvisible()
@@ -130,6 +130,7 @@ public class PlayerController : MonoBehaviour
         //Charge
         OnCharge.Invoke();
     }
+////////////////////////////////////////////////////////
 
     // Update is called once per frame
     void Update()
@@ -289,5 +290,11 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.localScale = Vector3.one;
+    }
+
+    public void Destruction()
+    {
+        Debug.Log("DEATH");
+        this.gameObject.SetActive(false);
     }
 }
