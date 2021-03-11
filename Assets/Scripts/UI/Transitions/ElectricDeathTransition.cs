@@ -5,14 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class ElectricDeathTransition : AbstractTransition
 {
-    protected override IEnumerator LoadPreTransition()
+    void Awake()
     {
-        transition.SetTrigger("ElectricDeath");
-        yield return null;
+        gameObject.SetActive(false);
     }
-    protected override IEnumerator LoadPostTransition()
+
+    public override void LoadPreTransition()
+    {
+        gameObject.SetActive(true);
+        transition.SetTrigger("ElectricDeath");
+    }
+    public override void LoadPostTransition()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        yield return null;
     }
 }

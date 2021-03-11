@@ -14,15 +14,20 @@ public static class Transitions
     {
         Debug.Log("Make Transition");
         GameObject go = GameObject.FindGameObjectsWithTag("Transitions")[0];
-        AbstractTransition at;
+        AbstractTransition at = null;
         
         switch(type)
         {
             case TransitionType.ELECTRIC_DEATH:
-                at = (ElectricDeathTransition) go.GetComponentInChildren<ElectricDeathTransition>();
+                at = (ElectricDeathTransition) go.GetComponentInChildren<ElectricDeathTransition>(true);
             break;
             default:
             break;
+        }
+
+        if(at != null)
+        {
+            at.LoadPreTransition();
         }
     }
 }

@@ -4,10 +4,9 @@ using UnityEngine;
 
 public abstract class AbstractTransition : MonoBehaviour
 {
+    [SerializeField]
     protected Animator transition;
-    protected float transitionTime = 1f;
 
-
-    protected abstract IEnumerator LoadPreTransition();
-    protected abstract IEnumerator LoadPostTransition();
+    public abstract void LoadPreTransition();
+    public abstract void LoadPostTransition();
 }
