@@ -50,11 +50,11 @@ public class EnergyContainer : MonoBehaviour
 
         //Check global variables to set up the energy conditions.
         var _moduleMaterial = _ModuleSprite.material;
-        _moduleMaterial.SetFloat("_Arc2", 360f - GameDataSingleton.ENERGY_LEVEL * 3.6f);
+        _moduleMaterial.SetFloat("_Arc2", 360f - GameDataSingleton.MODULE_ENERGY_LEVEL * 3.6f);
         var _moduleEnergyMaterial = _ModuleEnergySprite.material;
-        _moduleEnergyMaterial.SetFloat("_Arc2", 360f - GameDataSingleton.ENERGY_LEVEL * 3.6f);
+        _moduleEnergyMaterial.SetFloat("_Arc2", 360f - GameDataSingleton.MODULE_ENERGY_LEVEL * 3.6f);
         
-        energyLevel += GameDataSingleton.ENERGY_LEVEL;
+        energyLevel = GameDataSingleton.BASE_ENERGY_LEVEL + GameDataSingleton.MODULE_ENERGY_LEVEL;
 
         _PlayerController = transform.parent.GetComponent<PlayerController>();
         
@@ -62,6 +62,7 @@ public class EnergyContainer : MonoBehaviour
         _PlayerController.OnWaste.AddListener(Waste);
         //OnCharge subscribe
         _PlayerController.OnCharge.AddListener(Charge);
+        _PlayerController.OnChargeAll.AddListener(ChargeAll);
         gameObject.SetActive(false);
     }
 
@@ -82,34 +83,47 @@ public class EnergyContainer : MonoBehaviour
 
         gameObject.SetActive(true);
         var _material = _ModuleEnergySprite.material;
-        if(energyLevel < 100f)
+        if(energyLevel < GameDataSingleton.BASE_ENERGY_LEVEL)
         {
             _material = _CenterEnergySprite.material;
         }
         shaderValue = _material.GetFloat("_Arc1") + changeWaste;
         _material.SetFloat("_Arc1", shaderValue);
-        energyLevel -= (changeWaste*100)/360;
+        energyLevel -= (changeWaste*GameDataSingleton.BASE_ENERGY_LEVEL)/360;
         //Check availability of energy
     }
 
     void Charge()
     {
-        if(energyLevel >= (100+GameDataSingleton.ENERGY_LEVEL))
+        if(energyLevel >= (GameDataSingleton.BASE_ENERGY_LEVEL+GameDataSingleton.MODULE_ENERGY_LEVEL))
         {
             _PlayerController.NoEnergy = false;
-            energyLevel = (100+GameDataSingleton.ENERGY_LEVEL);
+            energyLevel = (GameDataSingleton.BASE_ENERGY_LEVEL+GameDataSingleton.MODULE_ENERGY_LEVEL);
             Disappear();
             return;
         }
 
         var _material = _CenterEnergySprite.material;
-        if(energyLevel > 100f)
+        if(energyLevel > GameDataSingleton.BASE_ENERGY_LEVEL)
         {
             _material = _ModuleEnergySprite.material;
         }
         shaderValue = _material.GetFloat("_Arc1") - changeCharge;
         _material.SetFloat("_Arc1", shaderValue);
-        energyLevel += (changeCharge*100)/360;
+        energyLevel += (changeCharge*GameDataSingleton.BASE_ENERGY_LEVEL)/360;
+    }
+
+    void ChargeAll()
+    {
+        shaderValue = 0f;
+
+        _CenterEnergySprite.material.SetFloat("_Arc1", shaderValue);
+        _ModuleEnergySprite.material.SetFloat("_Arc1", shaderValue);
+
+        _PlayerController.NoEnergy = false;
+        energyLevel = (GameDataSingleton.BASE_ENERGY_LEVEL+GameDataSingleton.MODULE_ENERGY_LEVEL);
+        Disappear();
+        return;
     }
 
     void Disappear()

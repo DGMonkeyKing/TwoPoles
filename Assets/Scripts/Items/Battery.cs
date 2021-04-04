@@ -8,6 +8,11 @@ public class Battery : PickUpItem
     {
         Debug.Log("Effecting...");
         pc.OnChargeAll.Invoke();
+        Disappear();
+    }
+
+    public override void Disappear()
+    {
         Destroy(gameObject);
     }
 }

@@ -22,7 +22,11 @@ public class InterfazPause : MonoBehaviour
     void Update()
     {
         //Check Start button is pressed (whether or not is also paused)
-        var pauseInput = Input.GetButtonDown ("Pause");
+        var pauseInputP1 = Input.GetButtonDown ("Pause - P1");
+        var pauseInputP2 = Input.GetButtonDown ("Pause - P2");
+
+        var pauseInput = pauseInputP1 || pauseInputP2;
+        m_PauseMenu.SetPlayerPaused(pauseInputP1, pauseInputP2);
 #if LOG
         Debug.Log("pauseInput: " + pauseInput);
 #endif
@@ -30,36 +34,16 @@ public class InterfazPause : MonoBehaviour
         {
             if(isGamePaused)
             {
-                ResumeGame();
+                m_PauseMenu.ResumeGame();
+                isGamePaused = false;
+                m_PauseMenu.gameObject.SetActive(false);
             }
             else
             {
-                PauseGame();
+                m_PauseMenu.PauseGame();
+                isGamePaused = true;
+                m_PauseMenu.gameObject.SetActive(true);
             }
         }
-    }
-
-    void PauseGame ()
-    {
-        
-        Debug.Log("PAUSA");
-        Time.timeScale = 0f;
-        AudioListener.pause = true;
-        
-        isGamePaused = true;
-
-        m_PauseMenu.gameObject.SetActive(true);
-    }
-
-    void ResumeGame ()
-    {
-        
-        Debug.Log("RESUME");
-        Time.timeScale = 1f;
-        AudioListener.pause = false;
-        
-        isGamePaused = false;
-        
-        m_PauseMenu.gameObject.SetActive(false);
     }
 }

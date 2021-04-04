@@ -16,6 +16,11 @@ public class InfoChip : PickUpItem
     {
         Debug.Log("Effecting...");
         //PlayerPrefs save Collectable item.
+        Disappear();
+    }
+
+    public override void Disappear()
+    {
         Destroy(gameObject);
     }
 }

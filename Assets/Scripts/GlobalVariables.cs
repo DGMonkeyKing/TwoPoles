@@ -6,7 +6,7 @@ public static class GlobalVariables
 {
     // Strings
     public static string CURRENT_LEVEL = "CURRENT_LEVEL";
-    public static string ENERGY_LEVEL = "ENERGY_LEVEL";
+    public static string MODULE_ENERGY_LEVEL = "MODULE_ENERGY_LEVEL";
     
     public static bool InputEnabled = true;
 }

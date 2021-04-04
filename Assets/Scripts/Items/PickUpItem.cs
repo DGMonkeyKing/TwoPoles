@@ -27,4 +27,5 @@ public abstract class PickUpItem : MonoBehaviour
     }
 
     public abstract void EffectPickUp();
+    public abstract void Disappear();
 }
