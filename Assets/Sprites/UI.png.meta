@@ -44,6 +44,24 @@ TextureImporter:
   - first:
       213: -343943630576144839
     second: UI_14
+  - first:
+      213: 7301787903208175943
+    second: UI_15
+  - first:
+      213: 1652299931923453484
+    second: UI_16
+  - first:
+      213: 388057999756033245
+    second: UI_17
+  - first:
+      213: -5481780447360278658
+    second: UI_18
+  - first:
+      213: 228940821244427079
+    second: UI_19
+  - first:
+      213: 6620621745411573659
+    second: UI_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -159,7 +177,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 228
+        y: 369
         width: 182
         height: 24
       alignment: 0
@@ -180,7 +198,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 203
+        y: 344
         width: 182
         height: 24
       alignment: 0
@@ -201,7 +219,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 178
+        y: 319
         width: 182
         height: 24
       alignment: 0
@@ -222,7 +240,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 153
+        y: 294
         width: 182
         height: 24
       alignment: 0
@@ -243,7 +261,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 128
+        y: 269
         width: 182
         height: 24
       alignment: 0
@@ -264,7 +282,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 103
+        y: 244
         width: 182
         height: 24
       alignment: 0
@@ -285,7 +303,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 78
+        y: 219
         width: 182
         height: 24
       alignment: 0
@@ -306,7 +324,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 52
+        y: 194
         width: 182
         height: 24
       alignment: 0
@@ -327,7 +345,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 27
+        y: 169
         width: 182
         height: 24
       alignment: 0
@@ -348,7 +366,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 2
+        y: 144
         width: 182
         height: 24
       alignment: 0
@@ -369,7 +387,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 116
+        y: 257
         width: 76
         height: 76
       alignment: 0
@@ -389,12 +407,12 @@ TextureImporter:
       name: UI_13
       rect:
         serializedVersion: 2
-        x: 198
-        y: 226
+        x: 199
+        y: 367
         width: 182
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,12 +428,12 @@ TextureImporter:
       name: UI_14
       rect:
         serializedVersion: 2
-        x: 198
-        y: 196
+        x: 199
+        y: 337
         width: 182
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

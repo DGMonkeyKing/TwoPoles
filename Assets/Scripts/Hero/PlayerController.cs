@@ -94,7 +94,6 @@ public class PlayerController : MonoBehaviour
     }
 
     private float baseGravityScale;
-
     private Vector3 m_Velocity = Vector3.zero;
     private Vector3 m_Scale = Vector3.one;
 
@@ -135,100 +134,105 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Movement
-        horizontalInput = Input.GetAxisRaw ("Horizontal - " + playerNum.ToString());
-        verticalInput = Input.GetAxisRaw ("Vertical - " + playerNum.ToString()); //Useless for now
-
-        //If horizontalInput is negative, dale la vuelta.
-        if (horizontalInput > 0) 
+        if(!InterfazPause.IsGamePaused)
         {
-            horizontalInput = 1;
-            m_SpriteRenderer.flipX = true;
-        }
-        else if (horizontalInput < 0)
-        {
-            horizontalInput = -1;
-            m_SpriteRenderer.flipX = false;
-        }
+            var timeScale = (Time.deltaTime > 0f) ? 1f : 0f;
 
-        //Movement
-        Vector3 targetVelocity = new Vector2(horizontalInput * speed, m_Rigidbody2D.velocity.y);
-        // And then smoothing it out and applying it to the character
-        m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, movementSmoothing);
+            //Movement
+            horizontalInput = Input.GetAxisRaw ("Horizontal - " + playerNum.ToString());
+            verticalInput = Input.GetAxisRaw ("Vertical - " + playerNum.ToString()); //Useless for now
 
-        //Jumping
-        jumpInput = Input.GetButton ("Jump - " + playerNum.ToString());
-
-        if(isGrounded)
-        {
-            if(!stillPressing && jumpInput)
+            //If horizontalInput is negative, dale la vuelta.
+            if (horizontalInput > 0) 
             {
-                stillPressing = true;
-                Stretch();
-                isGrounded = false;
-                m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x,0);
-                m_Rigidbody2D.AddForce(new Vector3(0,1,0) * jumpForce, ForceMode2D.Impulse);
-            } 
-        }
-        if(stillPressing && !jumpInput) //Soltamos el botón o se acaba el tiempo
-        {
-            stillPressing = false;
-            if(m_Rigidbody2D.velocity.y > 0) m_Rigidbody2D.velocity = new Vector2( m_Rigidbody2D.velocity.x, 0f);
-        }
-
-        // Conducting
-        conducting = Input.GetButton ("Action - " + playerNum.ToString());
-        if(conducting && !noEnergy)
-        {
-            Expand();
-            electricity.SetActive(true);
-            stillPressing = false;
-            //Waste
-            OnWaste.Invoke();
-        }
-        if(noEnergy || Input.GetButtonUp("Action - " + playerNum.ToString()))
-        {
-            Shrink();
-            electricity.SetActive(false);
-            //Charge
-            OnCharge.Invoke();
-        }
-
-        //Check if conducting
-        if(conducting)
-        {
-            if(m_OtherPlayer.IsConducting() && !isGrounded)
-            {
-                int inverse = 
-                    ((Polarity != MagneticField.Polarity.metal) && 
-                    (m_OtherPlayer.Polarity == Polarity)) ? -1 : 1;
-                m_Rigidbody2D.AddForce(
-                    Vector3.Normalize(
-                        (m_OtherPlayer.transform.position - this.transform.position)) 
-                        * (inverse * (m_OtherPlayer.ConductingForce*0.1f)), ForceMode2D.Impulse);
+                horizontalInput = 1;
+                m_SpriteRenderer.flipX = true;
             }
-        }
-
-        bool wasGrounded = isGrounded;
-        // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
-        // This can be done using layers instead but Sample Assets will not overwrite your project settings.
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
-        for (int i = 0; i < colliders.Length; i++)
-        {
-            if (colliders[i].gameObject != gameObject && m_Rigidbody2D.velocity.y <= 0)
+            else if (horizontalInput < 0)
             {
-                isGrounded = true;
-                if(!wasGrounded) {
-                    Shorten();
-                }
-            } 
-        }
-        if(colliders.Length == 0) isGrounded = false;
+                horizontalInput = -1;
+                m_SpriteRenderer.flipX = false;
+            }
 
-        //Update values on Animator
-        m_Animator.SetFloat("speed", horizontalInput);
-        m_Animator.SetBool("jumping", !isGrounded);
-        m_Animator.SetBool("action", IsConducting());
+            //Movement
+            Vector3 targetVelocity = new Vector2(horizontalInput * speed * timeScale, m_Rigidbody2D.velocity.y);
+            // And then smoothing it out and applying it to the character
+            m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, movementSmoothing);
+
+            //Jumping
+            jumpInput = Input.GetButton ("Jump - " + playerNum.ToString());
+
+            if(isGrounded)
+            {
+                if(!stillPressing && jumpInput)
+                {
+                    stillPressing = true;
+                    Stretch();
+                    isGrounded = false;
+                    m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x,0);
+                    m_Rigidbody2D.AddForce(new Vector3(0,1,0) * jumpForce * timeScale, ForceMode2D.Impulse);
+                } 
+            }
+            if(stillPressing && !jumpInput) //Soltamos el botón o se acaba el tiempo
+            {
+                stillPressing = false;
+                if(m_Rigidbody2D.velocity.y > 0) m_Rigidbody2D.velocity = new Vector2( m_Rigidbody2D.velocity.x, 0f);
+            }
+
+            // Conducting
+            conducting = Input.GetButton ("Action - " + playerNum.ToString());
+            if(IsConducting())
+            {
+                Expand();
+                electricity.SetActive(true);
+                stillPressing = false;
+                //Waste
+                OnWaste.Invoke();
+            }
+            if(noEnergy || !Input.GetButton("Action - " + playerNum.ToString()))
+            {
+                Shrink();
+                electricity.SetActive(false);
+                //Charge
+                OnCharge.Invoke();
+            }
+
+            //Check if conducting
+            if(conducting)
+            {
+                if(m_OtherPlayer.IsConducting() && !isGrounded)
+                {
+                    int inverse = 
+                        ((Polarity != MagneticField.Polarity.metal) && 
+                        (m_OtherPlayer.Polarity == Polarity)) ? -1 : 1;
+                    m_Rigidbody2D.AddForce(
+                        Vector3.Normalize(
+                            (m_OtherPlayer.transform.position - this.transform.position)) 
+                            * (inverse * (m_OtherPlayer.ConductingForce*0.1f * timeScale)), ForceMode2D.Impulse);
+                }
+            }
+
+            bool wasGrounded = isGrounded;
+            // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
+            // This can be done using layers instead but Sample Assets will not overwrite your project settings.
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                if (colliders[i].gameObject != gameObject && m_Rigidbody2D.velocity.y <= 0)
+                {
+                    isGrounded = true;
+                    if(!wasGrounded) {
+                        Shorten();
+                    }
+                } 
+            }
+            if(colliders.Length == 0) isGrounded = false;
+
+            //Update values on Animator
+            m_Animator.SetFloat("speed", horizontalInput);
+            m_Animator.SetBool("jumping", !isGrounded);
+            m_Animator.SetBool("action", IsConducting());
+        }
     }
 
     public bool IsConducting()
