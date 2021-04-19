@@ -9,4 +9,9 @@ public static class GlobalVariables
     public static string MODULE_ENERGY_LEVEL = "MODULE_ENERGY_LEVEL";
     
     public static bool InputEnabled = true;
+    public static bool onDying = false;
+
+
+    // SOUNDS NAMES
+    public static string THEME = "THEME";
 }

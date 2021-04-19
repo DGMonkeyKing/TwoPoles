@@ -54,7 +54,7 @@ public abstract class AbstractLevel : MonoBehaviour
     {
         foreach (Transform child in allChildren)
         {
-            child.gameObject.SetActive(false);
+            if(child != null) child.gameObject.SetActive(false);
         }
     }
 }

@@ -143,15 +143,19 @@ public class PlayerController : MonoBehaviour
             verticalInput = Input.GetAxisRaw ("Vertical - " + playerNum.ToString()); //Useless for now
 
             //If horizontalInput is negative, dale la vuelta.
-            if (horizontalInput > 0) 
+            if(horizontalInput != 0)
             {
-                horizontalInput = 1;
-                m_SpriteRenderer.flipX = true;
-            }
-            else if (horizontalInput < 0)
-            {
-                horizontalInput = -1;
-                m_SpriteRenderer.flipX = false;
+                //FindObjectOfType<AudioManager>().Play("Step");
+                if (horizontalInput > 0) 
+                {
+                    horizontalInput = 1;
+                    m_SpriteRenderer.flipX = true;
+                }
+                else if (horizontalInput < 0)
+                {
+                    horizontalInput = -1;
+                    m_SpriteRenderer.flipX = false;
+                }
             }
 
             //Movement
@@ -244,7 +248,7 @@ public class PlayerController : MonoBehaviour
     public void Stretch()
     {
         transform.localScale = m_Scale + (Vector3.up*m_StretchVariation) + (Vector3.left*m_StretchVariation);  
-
+        FindObjectOfType<AudioManager>().Play("Jump");
         StartCoroutine("AnimateMovement");
     }
     // Grow x shrink y
@@ -299,6 +303,7 @@ public class PlayerController : MonoBehaviour
     public void Destruction()
     {
         Debug.Log("DEATH");
+        FindObjectOfType<AudioManager>().StopAllSounds();
         this.gameObject.SetActive(false);
     }
 }
