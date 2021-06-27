@@ -72,7 +72,7 @@ public class CameraManager : MonoBehaviour
 
     void Start()
     {
-        levels[currentLevel].GetComponent<Level>().ActiveMe();
+        levels[currentLevel].GetComponent<AbstractLevel>().ActiveMe();
         SetCameraToLevel();
     }
 
@@ -81,9 +81,9 @@ public class CameraManager : MonoBehaviour
         if(!PLAYER1.activeInHierarchy && !PLAYER2.activeInHierarchy)
         {
             Debug.Log("currentLevel: " + currentLevel);
-            levels[currentLevel].GetComponent<Level>().DesactiveMe();
+            levels[currentLevel].GetComponent<AbstractLevel>().DesactiveMe();
             currentLevel = currentLevel+1;
-            levels[currentLevel].GetComponent<Level>().ActiveMe();
+            levels[currentLevel].GetComponent<AbstractLevel>().ActiveMe();
 
             PLAYER1.SetActive(true);
             PLAYER2.SetActive(true);

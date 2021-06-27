@@ -41,8 +41,8 @@ InputManager:
     m_Name: Jump - P1
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: 
+    negativeButton: s
+    positiveButton: w
     altNegativeButton: 
     altPositiveButton: joystick 1 button 0
     gravity: 1000

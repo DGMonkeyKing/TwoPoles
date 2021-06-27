@@ -124,6 +124,7 @@ public class PlayerController : MonoBehaviour
 
     void OnBecameInvisible()
     {
+        //Get out of screen
         gameObject.SetActive(false);
         jumpInput = conducting = noEnergy = false;
         //Charge
@@ -172,11 +173,10 @@ public class PlayerController : MonoBehaviour
                 {
                     stillPressing = true;
                     Stretch();
-                    isGrounded = false;
                     m_Rigidbody2D.velocity = new Vector2(m_Rigidbody2D.velocity.x,0);
                     m_Rigidbody2D.AddForce(new Vector3(0,1,0) * jumpForce * timeScale, ForceMode2D.Impulse);
                 } 
-            }
+            } 
             if(stillPressing && !jumpInput) //Soltamos el botón o se acaba el tiempo
             {
                 stillPressing = false;
@@ -203,16 +203,17 @@ public class PlayerController : MonoBehaviour
 
             //Check if conducting
             if(conducting)
-            {
+            {                       
                 if(m_OtherPlayer.IsConducting() && !isGrounded)
                 {
                     int inverse = 
                         ((Polarity != MagneticField.Polarity.metal) && 
                         (m_OtherPlayer.Polarity == Polarity)) ? -1 : 1;
+
                     m_Rigidbody2D.AddForce(
                         Vector3.Normalize(
                             (m_OtherPlayer.transform.position - this.transform.position)) 
-                            * (inverse * (m_OtherPlayer.ConductingForce*0.1f * timeScale)), ForceMode2D.Impulse);
+                            * (inverse * (m_OtherPlayer.ConductingForce * timeScale)), ForceMode2D.Force);
                 }
             }
 
@@ -222,13 +223,10 @@ public class PlayerController : MonoBehaviour
             Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
             for (int i = 0; i < colliders.Length; i++)
             {
-                if (colliders[i].gameObject != gameObject && m_Rigidbody2D.velocity.y <= 0)
-                {
-                    isGrounded = true;
-                    if(!wasGrounded) {
-                        Shorten();
-                    }
-                } 
+                isGrounded = true;
+                if(!wasGrounded) {
+                    Shorten();
+                }
             }
             if(colliders.Length == 0) isGrounded = false;
 

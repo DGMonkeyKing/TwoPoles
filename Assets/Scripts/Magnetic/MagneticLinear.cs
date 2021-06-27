@@ -49,9 +49,8 @@ public class MagneticLinear : MagneticField
 
     protected override void ApplyForce(Rigidbody2D target, bool invert)
     {
-        Debug.Log("ACCION");
         var direction = (vertical) ? new Vector3(0,1,0) : new Vector3(1,0,0);
         int i = (invert) ? -1 : 1;
-        target.AddForce(direction * (i * force));
+        target.AddForce(direction * (i * force), ForceMode2D.Force);
     }
 }

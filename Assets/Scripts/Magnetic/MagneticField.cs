@@ -48,7 +48,7 @@ public abstract class MagneticField : MonoBehaviour
 ///////////////////////////////////////////////////////////////
 /////// MAGNETIC CHECK FIELD //////////////////////////////////
 ///////////////////////////////////////////////////////////////
-/*
+
     private Dictionary<int, float> go2Gravity = new Dictionary<int, float>();
     private void OnTriggerEnter2D(Collider2D other) 
     {
@@ -67,7 +67,7 @@ public abstract class MagneticField : MonoBehaviour
             else Debug.LogError("NO HAY RIGIDBODY2D EN EL OBJETO ATRAIDO.");
         }
     }
-*/
+
     private void OnTriggerStay2D(Collider2D other) 
     {
         int mask = 1 << other.gameObject.layer;
@@ -87,8 +87,16 @@ public abstract class MagneticField : MonoBehaviour
             }
             if(pc)
             {
-                if(!pc.IsConducting()) return;
-                else invert = (pc.Polarity == polarity) ? true : false; 
+                if(!pc.IsConducting())
+                {
+                    if (rb) rb.gravityScale = go2Gravity[other.GetInstanceID()];
+                    return;
+                } 
+                else
+                {
+                    invert = (pc.Polarity == polarity) ? true : false; 
+                    rb.gravityScale = 0f;
+                } 
             }
             if (rb) 
             {
@@ -97,7 +105,7 @@ public abstract class MagneticField : MonoBehaviour
             else Debug.LogError("NO HAY RIGIDBODY2D EN EL OBJETO ATRAIDO.");
         }
     }
-/*
+
     private void OnTriggerExit2D(Collider2D other) 
     {
         int mask = 1 << other.gameObject.layer;
@@ -111,6 +119,6 @@ public abstract class MagneticField : MonoBehaviour
             else Debug.LogError("NO HAY RIGIDBODY2D EN EL OBJETO ATRAIDO.");
         }
     }
-*/
+
     protected abstract void ApplyForce(Rigidbody2D target, bool invert);
 }

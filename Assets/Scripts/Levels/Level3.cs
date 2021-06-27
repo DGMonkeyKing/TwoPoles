@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level : AbstractLevel
+public class Level3 : AbstractLevel
 {
     void Start()
     {

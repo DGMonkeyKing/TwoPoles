@@ -6,10 +6,10 @@ public class InfoChip : PickUpItem
 {
     void OnEnable()
     {
-        //if(!GameDataSingleton.COLLECTABLE_INFO_CHIP[InstanceID])
-        //{
-        //    gameObject.SetActive(false);
-        //}
+    /*    if(!GlobalVariables.COLLECTABLE_INFO_CHIP_)
+        {
+            gameObject.SetActive(false);
+        }*/
     }
 
     public override void EffectPickUp()
